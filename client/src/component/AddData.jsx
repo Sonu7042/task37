@@ -18,7 +18,7 @@ const AddData = () => {
   const handleAddData = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post( "http://localhost:9000/save", data)
+      const response = await axios.post( "https://task37-rho.vercel.app/save", data)
       console.log(response.data)
       fetchData()
       setData({ name: "", age: "", gender:" "});
